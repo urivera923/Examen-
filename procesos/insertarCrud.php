@@ -1,33 +1,22 @@
 <?php
     require_once "../app/conexion.php";
     require_once "../app/metodosCrud.php";
-    $obj = new metodosPadre();
-
-// echo "Hola";
-    $mazda = $_POST["mazda"];
-    print_r($mazda);
-    $bmw = $_POST["bmw"];
-    print_r($bmw);
-    $subura = $_POST["subura"];
-    print_r($subura);
-    $rojo = $_POST["txtRojo"];
-    print_r($rojo);
-    $azul = $_POST["Azul"];
-    print_r($azul);
-    $negro = $_POST["txtNegro"];
-    $des = $_POST["txtdescripcion"];
-    print_r($des);
-
+    
+    // echo "Hola";
+    $marca = $_POST["txtMarca"];
+    $color = $_POST["txtColor"];
+    $descripcion = $_POST["txtDescripcion"];
+    
     $datos = array(
-        $mazda,
-        $bmw,
-        $subura,
-        $rojo,
-        $azul,
-        $negro,
-        $des
-
+        $marca,
+        $color,
+        $descripcion
     );
+    
+    print_r($datos);
+    
+    
+    $obj = new metodosPadre();
     if ($obj->insertarDatos($datos) == 1) {
         header("location:../index.php");
     } else {

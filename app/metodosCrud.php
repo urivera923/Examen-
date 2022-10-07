@@ -6,7 +6,7 @@
             $c = new Conectar();
             $conexion = $c->conexion();
 
-            $sql = "INSERT INTO t_autos (marca, color, descripcion) VALUES ('$datos[0]', $datos[1], $datos[2])";
+            $sql = "INSERT INTO t_autos (marca, color, descripcion) VALUES ('$datos[0]', '$datos[1]', '$datos[2]')";
             return $resultado = mysqli_query($conexion, $sql);
         }
 
