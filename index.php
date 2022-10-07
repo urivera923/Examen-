@@ -24,13 +24,16 @@
                 <div class="col p-0">
                     <nav class="navbar navbar-dark bg-dark d-none d-lg-block">
                         <div class="container-fluid">
-                            <a class="navbar-brand" href="./index.php">
-                                <img src="./assets/img/logo4.png" alt="" width="45" height="40" class="d-inline-block align-text-top">
-                                Bootstrap
-                            </a>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <p class="text-white text-center fw-bolder"> Bienvienido </p>
-                            </div>
+                           
+                            
+                                <a class="navbar-brand m-0 py-auto" href="./index.php" id="navbarTogglerDemo01">
+                                    <img src="./assets/img/logo4.png" alt="" width="45" height="40" class=" align-text-top">
+                                </a>
+                                <p class="text-white mx-auto fw-bolder fs-4"> ¡Bienvienido! </p>
+                                <a class="navbar-brand m-0" href="./index.php">
+                                    <img src="./assets/img/logo4.png" alt="" width="45" height="40" class=" align-text-top">
+                                </a>
+                            
                         </div>
                     </nav>
 
@@ -42,6 +45,7 @@
                             <form method="post" action="./procesos/insertarCrud.php" >
                                 <div class="form-floating">
                                     <select class="form-select" id="floatingSelectGrid" name="txtMarca">
+                                        <option value="">Seleccionar</option>
                                         <option value="Mazda" name="txtMarca">Mazda</option>
                                         <option value="BMW" name="txtMarca">BMW</option>
                                         <option value="Subaru" name="txtMarca">Subaru</option>
